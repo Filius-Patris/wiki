@@ -3612,141 +3612,6 @@
 </table>
 <h2 id="airblock">AirBlock</h2>
 <p><em>extends <a href="#floor">Floor</a></em></p>
-<h2 id="genericcrafter">GenericCrafter</h2>
-<p><em>extends <a href="#block">Block</a></em></p>
-<table>
-<thead>
-<tr>
-<th>field</th>
-<th>type</th>
-<th>default</th>
-<th>notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>outputItem</td>
-<td>ItemStack</td>
-<td>null</td>
-<td></td>
-</tr>
-<tr>
-<td>outputLiquid</td>
-<td>LiquidStack</td>
-<td>null</td>
-<td></td>
-</tr>
-<tr>
-<td>craftTime</td>
-<td>float</td>
-<td>80.0</td>
-<td></td>
-</tr>
-<tr>
-<td>craftEffect</td>
-<td>Effect</td>
-<td>none</td>
-<td></td>
-</tr>
-<tr>
-<td>updateEffect</td>
-<td>Effect</td>
-<td>none</td>
-<td></td>
-</tr>
-<tr>
-<td>updateEffectChance</td>
-<td>float</td>
-<td>0.04</td>
-<td></td>
-</tr>
-<tr>
-<td>drawer</td>
-<td>DrawBlock</td>
-<td>new DrawBlock()</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="genericsmelter">GenericSmelter</h2>
-<p><em>extends <a href="#genericcrafter">GenericCrafter</a></em></p>
-<p>A GenericCrafter with a new glowing region drawn on top.</p>
-<table>
-<thead>
-<tr>
-<th>field</th>
-<th>type</th>
-<th>default</th>
-<th>notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>flameColor</td>
-<td>Color</td>
-<td>ffc999ff</td>
-<td></td>
-</tr>
-<tr>
-<td>topRegion</td>
-<td>TextureRegion</td>
-<td>null</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="itemturret">ItemTurret</h2>
-<p><em>extends <a href="#turret">Turret</a></em></p>
-<table>
-<thead>
-<tr>
-<th>field</th>
-<th>type</th>
-<th>default</th>
-<th>notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ammoTypes</td>
-<td>ObjectMap<Item,BulletType></td>
-<td>new ObjectMap&lt;&gt;()</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="liquidblock">LiquidBlock</h2>
-<p><em>extends <a href="#block">Block</a></em></p>
-<table>
-<thead>
-<tr>
-<th>field</th>
-<th>type</th>
-<th>default</th>
-<th>notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>liquidRegion</td>
-<td>TextureRegion</td>
-<td>null</td>
-<td></td>
-</tr>
-<tr>
-<td>topRegion</td>
-<td>TextureRegion</td>
-<td>null</td>
-<td></td>
-</tr>
-<tr>
-<td>bottomRegion</td>
-<td>TextureRegion</td>
-<td>null</td>
-<td></td>
-</tr>
-</tbody>
-</table>
 <h2 id="armoredconduit">ArmoredConduit</h2>
 <p><em>extends <a href="#conduit">Conduit</a></em></p>
 <table>
@@ -4236,6 +4101,62 @@
 </tr>
 </tbody>
 </table>
+<h2 id="genericcrafter">GenericCrafter</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>outputItem</td>
+<td>ItemStack</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>outputLiquid</td>
+<td>LiquidStack</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>craftTime</td>
+<td>float</td>
+<td>80.0</td>
+<td></td>
+</tr>
+<tr>
+<td>craftEffect</td>
+<td>Effect</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td>updateEffect</td>
+<td>Effect</td>
+<td>none</td>
+<td></td>
+</tr>
+<tr>
+<td>updateEffectChance</td>
+<td>float</td>
+<td>0.04</td>
+<td></td>
+</tr>
+<tr>
+<td>drawer</td>
+<td>DrawBlock</td>
+<td>new DrawBlock()</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h2 id="cultivator">Cultivator</h2>
 <p><em>extends <a href="#genericcrafter">GenericCrafter</a></em></p>
 <table>
@@ -4298,6 +4219,121 @@
 </tr>
 </tbody>
 </table>
+<h2 id="genericsmelter">GenericSmelter</h2>
+<p><em>extends <a href="#genericcrafter">GenericCrafter</a></em></p>
+<p>A GenericCrafter with a new glowing region drawn on top.</p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>flameColor</td>
+<td>Color</td>
+<td>ffc999ff</td>
+<td></td>
+</tr>
+<tr>
+<td>topRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="itemturret">ItemTurret</h2>
+<p><em>extends <a href="#turret">Turret</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ammoTypes</td>
+<td>ObjectMap<Item,BulletType></td>
+<td>new ObjectMap&lt;&gt;()</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="liquidsource">LiquidSource</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<h2 id="liquidturret">LiquidTurret</h2>
+<p><em>extends <a href="#turret">Turret</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ammoTypes</td>
+<td>ObjectMap<Liquid,BulletType></td>
+<td>new ObjectMap&lt;&gt;()</td>
+<td></td>
+</tr>
+<tr>
+<td>liquidRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>topRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>extinguish</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="logicdisplay">LogicDisplay</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>maxSides</td>
+<td>int</td>
+<td>25</td>
+<td></td>
+</tr>
+<tr>
+<td>displaySize</td>
+<td>int</td>
+<td>64</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="powerblock">PowerBlock</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
 <h2 id="decaygenerator">DecayGenerator</h2>
 <p><em>extends <a href="#itemliquidgenerator">ItemLiquidGenerator</a></em></p>
 <h2 id="door">Door</h2>
@@ -4966,6 +5002,8 @@
 <p><em>extends <a href="#legacyblock">LegacyBlock</a></em></p>
 <h2 id="liquidbridge">LiquidBridge</h2>
 <p><em>extends <a href="#itembridge">ItemBridge</a></em></p>
+<h2 id="liquidconverter">LiquidConverter</h2>
+<p><em>extends <a href="#genericcrafter">GenericCrafter</a></em></p>
 <h2 id="liquidextendingbridge">LiquidExtendingBridge</h2>
 <p><em>extends <a href="#extendingitembridge">ExtendingItemBridge</a></em></p>
 <h2 id="liquidrouter">LiquidRouter</h2>
@@ -5651,14 +5689,8 @@ Liquids will take priority over items.</p>
 </tr>
 </tbody>
 </table>
-<h2 id="liquidconverter">LiquidConverter</h2>
-<p><em>extends <a href="#genericcrafter">GenericCrafter</a></em></p>
-<h2 id="liquidjunction">LiquidJunction</h2>
-<p><em>extends <a href="#liquidblock">LiquidBlock</a></em></p>
-<h2 id="liquidsource">LiquidSource</h2>
+<h2 id="liquidblock">LiquidBlock</h2>
 <p><em>extends <a href="#block">Block</a></em></p>
-<h2 id="liquidturret">LiquidTurret</h2>
-<p><em>extends <a href="#turret">Turret</a></em></p>
 <table>
 <thead>
 <tr>
@@ -5669,12 +5701,6 @@ Liquids will take priority over items.</p>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>ammoTypes</td>
-<td>ObjectMap<Liquid,BulletType></td>
-<td>new ObjectMap&lt;&gt;()</td>
-<td></td>
-</tr>
 <tr>
 <td>liquidRegion</td>
 <td>TextureRegion</td>
@@ -5688,13 +5714,15 @@ Liquids will take priority over items.</p>
 <td></td>
 </tr>
 <tr>
-<td>extinguish</td>
-<td>boolean</td>
-<td>true</td>
+<td>bottomRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
 <td></td>
 </tr>
 </tbody>
 </table>
+<h2 id="liquidjunction">LiquidJunction</h2>
+<p><em>extends <a href="#liquidblock">LiquidBlock</a></em></p>
 <h2 id="liquidvoid">LiquidVoid</h2>
 <p><em>extends <a href="#block">Block</a></em></p>
 <h2 id="logicblock">LogicBlock</h2>
@@ -5725,32 +5753,6 @@ Liquids will take priority over items.</p>
 <td>range</td>
 <td>float</td>
 <td>80.0</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="logicdisplay">LogicDisplay</h2>
-<p><em>extends <a href="#block">Block</a></em></p>
-<table>
-<thead>
-<tr>
-<th>field</th>
-<th>type</th>
-<th>default</th>
-<th>notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>maxSides</td>
-<td>int</td>
-<td>25</td>
-<td></td>
-</tr>
-<tr>
-<td>displaySize</td>
-<td>int</td>
-<td>64</td>
 <td></td>
 </tr>
 </tbody>
@@ -5933,8 +5935,6 @@ Liquids will take priority over items.</p>
 </tr>
 </tbody>
 </table>
-<h2 id="powerblock">PowerBlock</h2>
-<p><em>extends <a href="#block">Block</a></em></p>
 <h2 id="powernode">PowerNode</h2>
 <p><em>extends <a href="#powerblock">PowerBlock</a></em></p>
 <table>
@@ -7209,13 +7209,13 @@ Use the standard Floor class instead.</p>
 <tr>
 <td>hitEffect</td>
 <td>Effect</td>
-<td>mindustry.entities.Effect@5e2b512b</td>
+<td>mindustry.entities.Effect@6516181f</td>
 <td></td>
 </tr>
 <tr>
 <td>despawnEffect</td>
 <td>Effect</td>
-<td>mindustry.entities.Effect@5e2b512b</td>
+<td>mindustry.entities.Effect@6516181f</td>
 <td></td>
 </tr>
 <tr>
